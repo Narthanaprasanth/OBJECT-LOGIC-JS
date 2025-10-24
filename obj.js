@@ -3,7 +3,7 @@ let classObj = {
     "name": "classA",
     "teacherName": "Mary",
     "student": [
-        {         
+        {
             "name": "Ravi",
             "id": "101",
             "marks": [
@@ -14,10 +14,10 @@ let classObj = {
                 { "subject": "computer", "mark": 20 },
             ]
         },
-        {               
+        {
             "name": "Aju",
             "id": "102",
-            "marks": [         
+            "marks": [
                 { "subject": "English", "mark": 35 },
                 { "subject": "maths", "mark": 38 },
                 { "subject": "physics", "mark": 33 },
@@ -25,19 +25,19 @@ let classObj = {
                 { "subject": "computer", "mark": 30 },
             ]
         },
-        {             
+        {
             "name": "Binu",
             "id": "104",
             "marks": [
-                { "subject": "English","mark": 49 },
-                { "subject": "maths","mark": 40 },
-                { "subject": "physics","mark": 47 },
-                { "subject": "chemistyy","mark": 46 },
-                { "subject": "computer","mark": 50 },   
+                { "subject": "English", "mark": 49 },
+                { "subject": "maths", "mark": 40 },
+                { "subject": "physics", "mark": 47 },
+                { "subject": "chemistyy", "mark": 46 },
+                { "subject": "computer", "mark": 50 },
             ]
         }
     ]
-}  
+}
 
 //NAME OF ALL STUDENT
 // function all(classObj){
@@ -75,7 +75,7 @@ let classObj = {
 
 // }
 // subname(classObj)
-    
+
 //MARK OF SPECIFIC STUDENT IN ALL SUB          
 // function markof(classObj){
 //     let studentname="Aju"
@@ -85,7 +85,7 @@ let classObj = {
 //             console.log(eac.mark)
 //         })
 //     }
-                        
+
 // }
 // markof(classObj)
 
@@ -97,12 +97,12 @@ let classObj = {
 //     if(student){
 //         let total=0
 //         student.marks.forEach(mar=>{
-           
+
 //             total+=mar.mark
 //         })
 //         let avg=total/student.marks.length
 //         console.log(avg)
-      
+
 //     }
 
 // }
@@ -118,7 +118,7 @@ let classObj = {
 //     })
 //     console.log(total)
 // }
-  
+
 //AVERAGE MARK FOR ALL STUDENT IN SPECIFIC SUBJECT
 // let subjectname="English"
 // let total=0
@@ -128,26 +128,26 @@ let classObj = {
 //     if(sub1){
 //         total+=sub1.mark
 //         count++
-       
+
 //     }
-   
+
 // })
 // if(count>0){
 //     let avg=total/count
 //     console.log(avg)
 // }
- 
+
 //TOTAL MARK FOR ALL STUDENT IN SPECIFIC SUBJECT
 // let subjectname="English"
 // let total=0
 // classObj.student.forEach(stu=>{
-    
+
 //     let subject1=stu.marks.find(fin=>fin.subject===subjectname)
 //     if(subject1){
 //         total+=subject1.mark
 
 //     }
-   
+
 // })
 //  console.log(total)
 
@@ -211,7 +211,7 @@ let classObj = {
 //           lowestmark=totoal
 //         loweststudent=stu.name
 //     }
-      
+
 // })
 // if(loweststudent){
 //     console.log(`lowest total is ${lowestmark} for ${loweststudent}`)
@@ -271,7 +271,7 @@ let classObj = {
 //     }           
 // }      
 // console.log(`lowest average mark in subject:${lowesetsub} with mark ${lowestaverage}`)
-  
+
 //OVERALL AVERAGE MARK FOR THE CLASS
 // totalmark=0
 // let count=0
@@ -286,7 +286,7 @@ let classObj = {
 // console.log(avg)
 
 // }
-  
+
 
 //OVERALL TOTAL MARK FOR THE CLASS
 // let total=0
@@ -356,8 +356,8 @@ let classObj = {
 //     }
 // }
 // console.log(higest)
- 
-    
+
+
 //SUBJECT WIHT LOWEST TOTAL MARK
 // let totalsubject={}
 // classObj.student.forEach(stu=>{
@@ -390,11 +390,12 @@ let classObj = {
 //         highest=avg
 //         topstudent=stu.name
 //     }
-    
+
 // })
 // console.log(`${topstudent} with highest avg mark ${highest}`)
 
 // STUDENT WITH LOWEST AVERAGE MARK
+
 // let lowstudent=null
 // let lowest=Infinity
 // classObj.student.forEach(stu=>{
@@ -411,7 +412,7 @@ let classObj = {
 
 
 
- //SRUDENT WITH HIGEST TOTAL MARK
+//STUDENT WITH HIGEST TOTAL MARK
 //  let highest=0
 //  let highstudent=null
 //  classObj.student.forEach(stu=>{
@@ -426,6 +427,7 @@ let classObj = {
 //  console.log(`student with highst total mark- ${highstudent}:${highest} marks`)
 
 //STUDENT WITH LOWEST TOTAL MARK
+
 // let lowest=Infinity
 // let lowstudent=0
 // classObj.student.forEach(stu=>{
@@ -438,6 +440,7 @@ let classObj = {
 // console.log(`lowest total mark ${lowstudent}:${lowest} mark`)
 
 //PRINT THE NUMBER OF STUDENTS WHO SCORED ABOVE A CERTAIN MARK IN SPECIFIC SUBJECT
+
 // let subjectname="English"
 // let m=30
 // let count=0
@@ -454,6 +457,7 @@ let classObj = {
 
 
 //NUMBER OF STUDENT SCORED BELOW CERTAIN SCORE IN SPECIFIC SUBJECT
+
 // let subjectname="maths"
 // let count=0
 // let m=40
@@ -496,17 +500,127 @@ let classObj = {
 
 //PERCENTAGE OF STUDENT BELOW CERTAIN MARKS IN ALL SUBJECT
 
-// let m=40
-// let count=0
-// let totalstudent=classObj.student.length
-// classObj.student.forEach(stu=>{
-//     let allbelow=stu.marks.every(s=>s.mark<m)
-//     if(allbelow){
+// let m = 40
+// let count = 0
+// let totalstudent = classObj.student.length
+// classObj.student.forEach(stu => {
+//     let allbelow = stu.marks.every(s => s.mark < m)
+//     if (allbelow) {
 //         count++
 //     }
 // })
-// let percentage=(count/totalstudent)*100
+// let percentage = (count / totalstudent) * 100
 // console.log(`${percentage.toFixed(2)}`)
 
+
+//PERCENTAGE OF STUDENT ABOVE CERTAIN MARK IN  CERTAIN SUBJECT
+
+// let m = 40
+// let count = 0
+// let totalstudent = classObj.student.length
+// let subjectname = "English"
+// classObj.student.forEach(stu => {
+//     let sub = stu.marks.find(s => s.subject === subjectname)
+//     let above = sub.mark > m
+//     if (above) {
+//         count++
+//     }
+// })
+// let percentage = (count / totalstudent) * 100
+// console.log(percentage)
+
+
+//PRINT THE STUDENT WITH HIGHEST PERCENTAGE OF MARK
+// let highestpercentage=0
+// let topstudent=null
+// classObj.student.forEach(stu=>{
+//     let totalmark=stu.marks.reduce((a,b)=>a+b.mark,0)
+//     let percentage=(totalmark/(stu.marks.length*50))*100
+
+//     if(percentage>highestpercentage){
+//         highestpercentage=percentage
+//         topstudent=stu.name
+//     }
+// })
+
+// console.log(`student with highest percentage:${topstudent}-${highestpercentage.toFixed(0)}%`)
+
+
+
+
+
+//SUBJECT WITH HIGHEST PERCENTAGE OF MARKS
+let lowestpercentage=Infinity
+let lowestsubject=null
+
+classObj.student.forEach(stu=>{
+    stu.marks.forEach(s=>{
+    let totalmark=s.reduce((a,b)=>a+b.mark,0)
+    console.log(totalmark)
+    })              
+})
+
+
    
-     
+ 
+ 
+ 
+ 
+          
+ 
+                                                        
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
